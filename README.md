@@ -9,18 +9,18 @@ Neste projeto, os participantes serão desafiados a trabalhar em equipe para des
 Com o Hackadev, os participantes terão a oportunidade de vivenciar um ambiente empresarial, aprender novas habilidades técnicas e aprimorar suas habilidades interpessoais, tudo isso enquanto trabalham em equipe para concluir um projeto desafiador.
 
 ### Monitor:
-[Lucas Ferreira](https://github.com/LKSFerreira)
+ - [Lucas Ferreira](https://github.com/LKSFerreira)
 
 ### Integrandes do grupo:
 
-[MAURICIO SANTANA](https://github.com/mauriciomuniz)
-[GUILHERME RIBEIRO](https://github.com/RIBEIROSLMB)
-[MÁRIO IGOR BARBOSA](https://github.com/migorking)
-[MARCELO FURTADO](https://github.com/marcelof1997)
-[JULIANA RODRIGUES](https://github.com/Julianacris)
-[NATASHA LIMA](https://github.com/NatashaLima)
-[PABLO RANGEL](https://github.com/pablorangell)
-[PEDRO CRUZ](https://github.com/PedroCruz000)
-[SAULO EMÍDIO](https://github.com/sauloemidio)
-[PAULO REIS](https://github.com/prbn97)
-[THAIS MACHADO](https://github.com/machadothais)
+ - [MAURICIO SANTANA](https://github.com/mauriciomuniz)
+ - [GUILHERME RIBEIRO](https://github.com/RIBEIROSLMB)
+ - [MÁRIO IGOR BARBOSA](https://github.com/migorking)
+ - [MARCELO FURTADO](https://github.com/marcelof1997)
+ - [JULIANA RODRIGUES](https://github.com/Julianacris)
+ - [NATASHA LIMA](https://github.com/NatashaLima)
+ - [PABLO RANGEL](https://github.com/pablorangell)
+ - [PEDRO CRUZ](https://github.com/PedroCruz000)
+ - [SAULO EMÍDIO](https://github.com/sauloemidio)
+ - [PAULO REIS](https://github.com/prbn97)
+ - [THAIS MACHADO](https://github.com/machadothais)
