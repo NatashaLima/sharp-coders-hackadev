@@ -28,3 +28,10 @@ Com o Hackadev, os participantes terão a oportunidade de vivenciar um ambiente 
 ### IDE Visual Studio
 
 Para o desenvolvimento deste projeto utilizamos o Visual Studio por ser completo e poderoso, que oferece uma ampla gama de recursos e suporte para diversas linguagens de programação. É uma solução corporativa e abrangente que inclui ferramentas para depuração, testes, gerenciamento de versão, desenvolvimento web e desktop, entre outros.
+
+
+### Metodologia Ágil
+
+Por oferecer uma grande eficiência, transparência e flexibilidade. A metodologia ágil adotada para o desenvolvimento desse projeto será a metodologia Scrum. 
+Ela permitirá que toda equipe tenha uma visão clara de todos os processos do desenvolvimento, assim como a colaboração entre os grupos, que pode levar a um aumento na produtividade e criatividade.
+O Scrum é amplamente adotado pela indústria de tecnologia e por outras áreas, o que significa que existem muitos recursos disponíveis para ajudar as equipes a implementá-lo com sucesso.
