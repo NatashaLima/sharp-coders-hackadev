@@ -32,6 +32,6 @@ Para o desenvolvimento deste projeto utilizamos o Visual Studio por ser completo
 
 ### Metodologia Ágil
 
-Por oferecer uma grande eficiência, transparência e flexibilidade. A metodologia ágil adotada para o desenvolvimento desse projeto será a metodologia Scrum. 
+Por oferecer uma grande eficiência, transparência e flexibilidade. A metodologia ágil adotada para o desenvolvimento desse projeto será utilizando framework Scrum. 
 Ela permitirá que toda equipe tenha uma visão clara de todos os processos do desenvolvimento, assim como a colaboração entre os grupos, que pode levar a um aumento na produtividade e criatividade.
 O Scrum é amplamente adotado pela indústria de tecnologia e por outras áreas, o que significa que existem muitos recursos disponíveis para ajudar as equipes a implementá-lo com sucesso.
