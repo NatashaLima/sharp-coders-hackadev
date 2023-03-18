@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="../css/register.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="../css/register.css">     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
     <title>Página de cadastro</title>
 </head>
     <body>        
-        <h2 class="title"> Cadastro </h2> 
-        <form action="" id="form">
+         
+        <aside class="text-container">
+            <h4> 
+                <br> Olá! </br> 
+                Seja bem-vindo ao 
+                <br> <span class="orange-text">Shark Bank</span> </br> 
+            </h4>
             
-            <article class="form-container">            
+        </aside>
+
+        <form action="" class="form-container">
 
                 <label for="cpf"> CPF </label>            
                 <input id="cpf" name="cpf" type="text">                
@@ -37,11 +43,13 @@
                 <label for="confirm"> Confirmar senha </label>            
                 <input id="password" name="password" type="password">                
                 
+                <label for="newsletter" class="checkbox-label">
                 <input type="checkbox" id="newsletter" name="newsletter" class="checkbox">
-                <label for="newsletter" class="checkbox-label">Li e entendi este Termo de Aceitação para Criação de conta e  concordo com seus termos e condições.</label>
+                <span class="checkbox-text">Li e entendi este Termo de Aceitação para Criação de conta e  concordo com seus termos e condições.</span>
+                </label>
+                                  
                 <button type="submit"> Cadastrar </button>
-            </article>  
+
         </form>
     </body>
-
 </html>
