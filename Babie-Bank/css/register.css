@@ -19,8 +19,7 @@ body{
 
 .title{
     margin-top: -80%;
-    color: #ffff;  
-   
+    color: #ffff;   
 }
 
 .form-container {
@@ -35,34 +34,41 @@ body{
     flex-direction: column;
     gap: 10px;
     padding: 20px;
-    margin-left: 950px
+    margin-left: 400px;
 }
  
 .form-container label {
     margin-bottom: 0px;
     font-size: 15px;
-    
+    color: #111B59;
 }
  
-.form-container input {
-    
+.form-container input {       
     background: #D9D9D9;
     border-radius: 26px;    
     border: 0px;     
-    height: 50px  
-    
+    height: 50px      
 }
 
-.checkbox {    
-    margin-left: 5%;
-    height: 20px;
-    width: 20px;    
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}  
+
+.checkbox {
+    margin: 1%;
+    border: 10px solid #000000;  
+    height: 10px;
+    width: 10px;  
+    margin-left: 10px   
 }
   
-.checkbox-label {    
-    margin-right: 0%;            
+.checkbox-text {
+    font-size: 13px;
+    color: #000000;
 }
-
+  
 .form-container button{
     color: #fff;
     background-color: #F95E1D;
@@ -71,3 +77,16 @@ body{
     height: 50px;    
     font-size: 20px;  
 }
+
+.text-container{
+    font-family: 'Inter', sans-serif;
+    font-size: 45px;
+    color: #fff;
+}
+
+.orange-text {
+    color: #F95E1D;
+}
+  
+  
+  
