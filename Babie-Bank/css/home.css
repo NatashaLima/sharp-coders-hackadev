@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    
+;}
+
+body{
+    display: flex ;
+    align-items: center;
+    justify-content: center;    
+    width: 100%;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background: #111B59;
+}
+
+.text-container{
+    width: 570px;
+    height: 741px;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    
+}
+.text-container .imagem-onda{
+    width: 400px;
+    margin: 20px;
+    
+}
+.form-container {
+
+    width: 387px;
+    height: 380px;            
+    background: #EBEBEB;
+    border-radius: 26px;    
+    box-shadow: 0px 4px 18px 6px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    margin-left: 400px;
+    margin-right: 200px;
+    text-align: center;
+}
+
+.form-container .titulo-form-conteiner{
+    margin-top: 60px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.form-container .subtitulo-form-conteiner{
+    width: 233px;
+    height: 102px;
+    font-size: 20px;
+    margin: 10px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.form-container .botao{
+
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 26px;
+    width: 301px;
+    height: 56px;
+}
+
+.form-container .botao-acessar-form{
+    color: #FFFFFF;
+    background-color: #F95E1D;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+.form-container .botao-acessar-form:hover{
+    background: #ff8402;
+}
+
+.form-container .botao-cadastrar-form{
+    background-color: #EBEBEB;
+    transition: all .3s ease-in-out;
+}
+
+.form-container .botao-cadastrar-form:hover{
+    background: #dfdfdf;
+    
+
+}
