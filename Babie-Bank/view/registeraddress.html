@@ -15,44 +15,67 @@
 </head>
 
 <body>
-  <div id="CTA">
-    <h2>
-      <p>Informe i seu endereço</p>
-      <p>para receber seu <span>SharkCard</span></p>
-    </h2>
-    <img src="/Babie-Bank/img/registeraddress-img/SharkCard.png" alt="">
-  </div>
-  <div id="address form">
-    <h1>Registro</h1>
-    <img src="/Babie-Bank/img/registeraddress-img/happyshark.png.png" alt="">
 
-    <form action="">
-      <label for="cep">CEP:</label>
-      <input type="text" id="cep" name="cep">
+  <main>
+    <section id="SharkCard">
 
-      <label for="uf">UF:</label>
-      <input type="text" id="uf" name="uf">
+      <h1>
+        Informe seu endereço <br>
+        para receber seu <br>
+        <span>SharkCard</span>
+      </h1>
+      <img src="/Babie-Bank/img/registeraddress-img/SharkCard.png" alt="">
+    </section>
 
-      <label for="endereco">Endereço:</label>
-      <input type="text" id="endereco" name="endereco">
+    <div id="addressForm">
+      <section id="addressForm-title">
+        <h2>Registro<h2>
+            <img src="/Babie-Bank/img/registeraddress-img/happyshark.png.png" alt="">
+      </section>
 
-      <label for="numero">Número:</label>
-      <input type="text" id="numero" name="numero">
+      <form>
+        <fieldset>
+          <div class="input-wrapper">
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep">
+          </div>
 
-      <label for="complemento">Complemento:</label>
-      <input type="text" id="complemento" name="complemento">
+          <div class="input-wrapper">
+            <label for="uf">UF:</label>
+            <input type="text" id="uf" name="uf">
+          </div>
 
-      <label for="bairro">Bairro:</label>
-      <input type="text" id="bairro" name="bairro">
+          <div class="input-wrapper">
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco">
+          </div>
 
-      <label for="cidade">Cidade:</label>
-      <input type="text" id="cidade" name="cidade">
+          <div class="input-wrapper">
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero">
+          </div>
 
-      <button type="submit">Registrar</button>
-    </form>
-  </div>
+          <div class="input-wrapper">
+            <label for="complemento">Complemento:</label>
+            <input type="text" id="complemento" name="complemento">
+          </div>
 
+          <div class="input-wrapper">
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro">
+          </div>
 
+          <div class="input-wrapper">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade">
+          </div>
+
+          <button type="submit">Registrar</button>
+          
+        </fieldset>
+      </form>
+    </div>
+  </main>
 
 
   <script src="/Babie-Bank/js/modules/registeraddress.js"></script>
