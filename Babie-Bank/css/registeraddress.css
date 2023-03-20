@@ -3,8 +3,8 @@ body {
   margin: 0;
   width: 1440px;
   height: 1024px;
-
   font-family: 'Inter', sans-serif;
+
 }
 
 main {
@@ -55,29 +55,41 @@ fieldset {
   border-style: none;
   width: 323.08px;
   height: 427.62px;
-  padding: 60px 40px;
-
+  padding: 60px 48px;
+  font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
+  color: #111B59;
 }
 
 .input-wrapper {
-  height: 75px;
+  display: flex;
+  flex-direction: column;
 }
 
-.input-wrapper label {}
+.input-wrapper label {
+  margin: 0px 0px 3px 8px;
+}
+
 
 .input-wrapper input {
+  height: 35px;
+  border-style: none;
   background: #D9D9D9;
   border-radius: 26px;
-  border: 1px red
+}
+
+#field-CEP {
+  width: 226.93px;
+}
+
+#field-UF {
+  width: 45px;
 }
 
 button {
   width: 323.08px;
   height: 55.43px;
-
+  border-style: none;
   background: #F95E1D;
   border-radius: 26px;
   font-weight: 700;
@@ -87,6 +99,9 @@ button {
 
   color: #FFFFFF;
 }
+
+
+
 
 h1 {
   font-size: 48px;
