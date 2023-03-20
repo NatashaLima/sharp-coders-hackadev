@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/login.css">     
+    <link rel="stylesheet" href="../css/login.css">  
+    <script src="/Babie-Bank/js/modules/login.js"></script>   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
@@ -14,19 +15,18 @@
 </head>
 <body>
     <div id="login-container">
-        <h1>Login</h1>
+        <h1>Acesso</h1>
         <form action="">
-            <label for="email"> E-mail</label>
-            <input type="email" name="email" id="email" placeholder="Digite se e-mail" autocomplete="of">
-            <label for="password">senha</label>
+            <label for="register-container"> CPF</label>
+            <input type="email" name="email" id="email" placeholder="Digite o cpf" autocomplete="of">
+            <label for="password">Senha</label>
             <input type="password" name="password" id="password" placeholder="Digite sua senha">
+            <p>Lembrar minha conta</p>
             <a href="#" id="forgot-pass">Esqueceu a senha?</a>
             <input type="submit" value="Login">
         </form>
         <div id="social-container">
-            <p>Ou entre pelas redes sociais</p>
-            <i class="fa fa-google-g"></i>
-            <i class="fa fa-linkedin"></i>
+            <p>Lembrar minha conta</p>
         </div>
         <div id="register-container">
             <p>Ainda nao tem uma conta?</p>
@@ -36,6 +36,5 @@
 
     </div>
     
-    <script src="/Babie-Bank/js/modules/login.js"></script>
 </body>
 </html>

@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: inter;
+}
+
+body {
+    /* background: #111b59; */
+    background: #111b59;
+    color: #111b59;
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+div h1 {
+    color: #fcf9f9;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-left: 3
+}
+
+div form .alternative {
+    margin-top: 1rem;
+}
+
+div form .alternative span {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(246, 241, 241);
+    position: relative;
+}
+
+div form .alternative span::before, madicin .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 380px;
+    width: 387px;
+    bottom: 50%;
+    right: 50px;
+    background: rgb(255, 255, 255);
+}
+
+div .alternative span::after {
+    left: 50px;
+}
+
+div form {
+    /* margin-left: 1200px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #f0f2f4;
+    width: 387px;
+}
+
+div form label {
+    display: flex;
+    flex-direction: column;
+    color: #010966;
+}
+
+div form label span {
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    margin-left: 50px;
+    font-weight: 200;
+}
+
+div form input {
+    background: #dededf;
+    width: 90%;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-left: 20px;
+    outline: none;
+    color: rgb(48, 44, 44);
+    font-size: 1rem;
+    border: 1px solid #fafbfc;
+    border-radius: 26px;
+    
+}
+
+div form input[type="submit"] {
+    margin-left: 10px;
+    cursor: pointer;
+    width: 70%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 32px;
+    background: #ec6816;
+    color: rgb(250, 248, 248);
+    font-size: 1rem;
+    transition: all .3s ease-in-out;
+    font-weight: 600;
+}
+
+div form input[type="submit"]:hover {
+    background: #ff8402;
+    
+}
+
+section.images {
+    
+    width: 50vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 4rem;
+}
+
+section.images img {
+    width: 80%;
+}
+
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    section.images img {
+        width: 110%;
+    }
+
+    
+}
+
+@media only screen and (max-width: 900px) {
+    section.images {
+        display: none;
+        visibility: hidden;
+    }
+
+    div {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    div h1 {
+        font-size: 2rem;
+    }
+
+    div .alternative span {
+        font-size: 0.8rem;
+    }
+
+    div form label span, div form input[type="submit"] {
+        font-size: 1rem;
+    }
+}
