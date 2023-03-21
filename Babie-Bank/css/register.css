@@ -6,7 +6,6 @@
     padding: 0;
 }
 
-
 body{
     display: flex ;
     align-items: center;
@@ -16,15 +15,25 @@ body{
     font-family: 'Inter', sans-serif;
     background: #111B59;
 }
-
-.title{
-    margin-top: -80%;
-    color: #ffff;   
+  
+#registration-title{
+    width: 270.98px;
+    height: 134.38px;
+    display: flex;
+    margin: 0 auto 0;
+    align-items: center;
+    
 }
 
+h2 {
+    font-size: 35px;
+    display: inline-block;
+  
+    color: #EBEBEB;
+  }
+  
 .form-container {
-    top: 170px;
-    left: 893px;
+    position: relative;
     width: 380px;
     height: 650px;        
     background: #EBEBEB;
@@ -34,20 +43,18 @@ body{
     flex-direction: column;
     gap: 10px;
     padding: 20px;
-    margin-left: 400px;
+    margin-top: -37px;
+   
+} 
+
+#registration-form {
+    margin-left: 20%;
 }
- 
-.form-container label {
-    margin-bottom: 0px;
+
+#terms-link{
+    font-family: 'Inter', sans-serif;
+    color: #F95E1D;
     font-size: 15px;
-    color: #111B59;
-}
- 
-.form-container input {       
-    background: #D9D9D9;
-    border-radius: 26px;    
-    border: 0px;     
-    height: 50px      
 }
 
 .checkbox-label {
@@ -81,12 +88,36 @@ body{
 .text-container{
     font-family: 'Inter', sans-serif;
     font-size: 45px;
-    color: #fff;
+    color: #fff;    
 }
 
 .orange-text {
     color: #F95E1D;
 }
+
+/*validação de dados*/
+
+.form-container span {
+    margin-bottom: 0px;
+    font-size: 15px;
+    color: #111B59;
+}
   
+.form-container input {
+    background: #D9D9D9;
+    border-radius: 26px;
+    border-color: #D9D9D9;
+    height: 50px;
+}
   
+.form-container input.error {
+    border-color: red;
+}
+  
+.form-container .error-message {
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    display: none;
+ }
   
