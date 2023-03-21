@@ -23,34 +23,47 @@
             
         </aside>
 
-    <form action="" class="form-container" id="form">
+    <div id="registration-form">
+        <section id="registration-title">
+            <h2>Cadastro<h2>
+                <img src="/Babie-Bank/img/registeraddress-img/happyshark.png.png" alt="">
+          </section>
+        <form action="" class="form-container" id="form">
 
-        <span class="span-required"> CPF </span>            
-        <input id="cpf" name="cpf" type="text" class="inputs required" oninput="validateCPF()">                
+            <span class="span-required"> CPF </span>            
+            <input id="cpf" name="cpf" type="text" class="inputs required" oninput="validateCPF()">
+            <span id="cpf-error-message" class="error-message"></span>                        
 
-        <span class="span-required"> Nome Completo </span>            
-        <input id="username" name="username" type="text" class="inputs required" oninput="validateName()">                              
+            <span class="span-required"> Nome completo </span>            
+            <input id="username" name="username" type="text" class="inputs required" oninput="validateName()">                              
+            <span id="name-error-message" class="error-message"></span>
 
-        <span class="span-required"> Celular </span>            
-        <input id="phonenumber" name="phonenumber" type="text" class="inputs required" oninput="validatePhoneNumber()">                
+            <span class="span-required"> Celular </span>            
+            <input id="phonenumber" name="phonenumber" type="text" class="inputs required" oninput="validatePhoneNumber()">                
+            <span id="phonenumber-error-message" class="error-message"></span>
 
-        <span class="span-required"> Email </span>           
-        <input id="email" name="email" type="text" class="inputs required" oninput="validateEmail()">                
+            <span class="span-required"> Email </span>           
+            <input id="email" name="email" type="text" class="inputs required" oninput="validateEmail()">                
+            <span id="email-error-message" class="error-message"></span>
 
-        <span class="span-required"> Senha </span>           
-        <input id="password" name="password" type="password" class="inputs required" oninput="validatePassword()">                
+            <span class="span-required"> Senha </span>           
+            <input id="password" name="password" type="password" class="inputs required" oninput="validatePassword()">                
+            <span id="password-error-message" class="error-message"></span>
 
-        <span class="span-required"> Confirmar senha </span>            
-        <input id="confirmpassword" name="password" type="password" class="inputs required" oninput="validateConfirmPassword()">                
-                
-        <label class="checkbox-label">
-        <input type="checkbox" id="term" name="term" class="checkbox">
-        <span class="checkbox-text">Li e entendi este Termo de Aceitação para Criação de conta e  concordo com seus termos e condições.</span>
-        </label>
-                                  
-        <button type="button" onclick="validateForm()"> Cadastrar </button>
+            <span class="span-required"> Confirmar senha </span>            
+            <input id="confirmpassword" name="password" type="password" class="inputs required" oninput="validateConfirmPassword()">                
+            <span id="confirmpassword-error-message" class="error-message"></span>
+    
+            <label class="checkbox-label">
+                <input type="checkbox" id="termCheckbox" name="termCheckbox" class="checkbox">
+                <span class="checkbox-text">Li e entendi este termo de aceitação para criação de conta e concordo com seus <a href="terms.html" id="terms-link">termos e condições</a>.</span>
+            </label>
+            
+                                    
+            <button type="button" onclick="validateForm()"> Cadastrar </button>
 
-    </form>
+        </form>
+    </div>
     <script src="/Babie-Bank/js/modules/register.js"></script>
     </body>
 </html>
