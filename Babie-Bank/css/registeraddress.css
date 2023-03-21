@@ -59,6 +59,10 @@ fieldset {
   font-style: normal;
   font-weight: 400;
   color: #111B59;
+  
+  display: grid;
+  align-content: space-between;
+  justify-items: stretch;
 }
 
 .input-wrapper {
@@ -67,9 +71,8 @@ fieldset {
 }
 
 .input-wrapper label {
-  margin: 0px 0px 3px 8px;
+  margin: 0px 0px 6px 10px;
 }
-
 
 .input-wrapper input {
   height: 35px;
@@ -79,14 +82,32 @@ fieldset {
 }
 
 #field-CEP {
-  width: 226.93px;
+  width: 170px;
 }
 
 #field-UF {
-  width: 45px;
+  width: 65px;
+}
+
+#field-Numero {
+  width: 65px;
+}
+#field-Endereco {
+  width: 240px;
+}
+
+
+#fieldsInline1 {
+  display: flex;
+  justify-content: space-between;
+}
+#fieldsInline2 {
+  display: flex;
+  justify-content: space-between;
 }
 
 button {
+  margin-top: 25px;
   width: 323.08px;
   height: 55.43px;
   border-style: none;
@@ -99,8 +120,6 @@ button {
 
   color: #FFFFFF;
 }
-
-
 
 
 h1 {
