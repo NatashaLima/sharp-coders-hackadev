@@ -16,50 +16,10 @@ body {
   background-color: var(--primary-color);
 }
 
-main h1 {
-  color: var(--primary-color);
-  font-size: 2rem;
-}
-
-main p {
-  color: 0000;
-  font-size: 1.5rem;
-}
-
-#msgTermo {
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: 0000;
-  font-size: 1.5rem;
-}
-#msgTermo span {
-  color: #f95e1d;
-  cursor: pointer;
-}
-
-#msgTermo p {
-  padding-left: 1.2rem;
-  color: white;
-}
-
-#msgTermo input {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 10rem;
-  border-color: rgb(0, 0, 0);
-  flex-shrink: 0;
-}
-
-#fade {
+img {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(70, 70, 92, 0.9);
-  z-index: 5;
+  left: 46%;
+  z-index: 1;
 }
 
 #modal {
@@ -69,14 +29,14 @@ main p {
   align-items: center;
   left: 50%;
   top: 50%;
-  height: 95%;
+  height: 80%;
   width: 90%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -55%);
   background: var(--bg-color);
   transition: all 0.4s;
   border-radius: 1rem;
-  padding: 2rem;
-  z-index: 10;
+  padding: 4rem 0.3rem 0rem 0.3rem;
+  overflow-y: scroll;
 }
 
 #header-modal h1 {
@@ -92,7 +52,18 @@ main p {
   font-size: 1.2rem;
 }
 
-#footer-modal {
-  margin-top: 1.5rem;
+footer {
   display: flex;
+  position: fixed;
+  top: 90%;
+  left: 30%;
+  gap: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+footer P {
+  color: white;
+  width: 34rem;
 }
