@@ -2,17 +2,17 @@
 
 * {
     padding: 0;
-    margin: 0;
 }
 
 body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    width: 95%;
     height: 100vh;
     font-family: 'Inter', sans-serif;
     background: #111B59;
+    text-align: center;
 }
 
 .text-container {
@@ -115,7 +115,10 @@ body {
         background-image: url("/img/index/background.png");
         background-size: cover;
         background-position: center;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
         /* Altera a direção dos elementos para ficarem empilhados */
     }
 
@@ -127,7 +130,8 @@ body {
     }
 
     .text-container .title {
-        padding: 0 0 15px 0;
+        margin: 0;
+        /* padding: 0 0 15px 0; */
         font-size: 40px;
         /* Diminui o tamanho da fonte do título */
     }
@@ -138,7 +142,7 @@ body {
     }
 
     .text-container .sub-title {
-        padding: 15px 0 0 0;
+        /* padding: 15px 0 0 0; */
         font-size: 24px;
         /* Diminui o tamanho da fonte do título */
     }
@@ -147,14 +151,13 @@ body {
         content: url("/img/index/mobile.png");
         width: 120px;
         position: relative;
-        top: 40%;
+        top: 45px;
         /* Reduz o tamanho da imagem do baby tubarão */
     }
 
     .form-container {
         padding-top: 30px;
         /* Diminui o espaçamento entre o topo do formulário e a tela */
-        width: 80%;
         /* Reduz a largura do formulário */
     }
 
@@ -184,17 +187,54 @@ body {
 
 @media only screen and (min-width: 681px) and (max-width: 1024px) {
 
-    /* Insira aqui as regras de estilo que deseja aplicar para telas de tablets */
-    .text-container .sub-title {
-        font-size: 30px;
+    body {
+        background-image: url("/img/index/background.png");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        /* Altera a direção dos elementos para ficarem empilhados */
+    }
+
+    .text-container-titles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .text-container .title {
+        margin: 0;
+        /* padding: 0 0 15px 0; */
+        font-size: 40px;
+        /* Diminui o tamanho da fonte do título */
     }
 
     .text-container .imagem-onda {
-        width: 200px;
+        width: 300px;
+        /* Reduz o tamanho da imagem da onda */
+    }
+
+    .text-container .sub-title {
+        /* padding: 15px 0 0 0; */
+        font-size: 24px;
+        /* Diminui o tamanho da fonte do título */
     }
 
     .text-container .imagem-baby-tubarao {
-        width: 300px;
+        content: url("/img/index/mobile.png");
+        width: 120px;
+        position: relative;
+        top: 45px;
+        /* Reduz o tamanho da imagem do baby tubarão */
+    }
+
+    .form-container {
+        padding-top: 30px;
+        /* Diminui o espaçamento entre o topo do formulário e a tela */
+        /* Reduz a largura do formulário */
     }
 
     .form-container .titulo-form-conteiner {
