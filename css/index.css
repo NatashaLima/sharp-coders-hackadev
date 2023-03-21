@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background: #111B59;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-container .title {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    justify-content: center;
+}
+
+.text-container .imagem-onda {
+    display: flex;
+    padding-top: 1%;
+    width: 300px;
+}
+
+.text-container .sub-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    justify-content: center;
+}
+
+
+
+.text-container .imagem-baby-tubarao {
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background: #EBEBEB;
+    border-radius: 26px;
+    box-shadow: 0px 4px 18px 6px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.form-container .titulo-form-conteiner {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.form-container .subtitulo-form-conteiner {
+    width: 233px;
+    height: 102px;
+    font-size: 20px;
+    margin: 10px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.form-container .botao {
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 26px;
+    width: 300px;
+    height: 56px;
+}
+
+.form-container .botao-acessar-form:hover {
+    background: black;
+    color: EBEBEB;
+    cursor: pointer;
+}
+
+.form-container .botao-acessar-form {
+    color: #EBEBEB;
+    background-color: #F95E1D;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+
+.form-container .botao-cadastrar-form {
+    background-color: #EBEBEB;
+    transition: all .3s ease-in-out;
+}
+
+.form-container .botao-cadastrar-form:hover {
+    background-color: black;
+    color: #EBEBEB;
+    cursor: pointer;
+}
+
+/* Para telas de celular */
+@media (max-width: 680px) {
+    body {
+        background-image: url("/img/index/background.png");
+        background-size: cover;
+        background-position: center;
+        flex-direction: column;
+        /* Altera a direção dos elementos para ficarem empilhados */
+    }
+
+    .text-container-titles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .text-container .title {
+        padding: 0 0 15px 0;
+        font-size: 40px;
+        /* Diminui o tamanho da fonte do título */
+    }
+
+    .text-container .imagem-onda {
+        width: 300px;
+        /* Reduz o tamanho da imagem da onda */
+    }
+
+    .text-container .sub-title {
+        padding: 15px 0 0 0;
+        font-size: 24px;
+        /* Diminui o tamanho da fonte do título */
+    }
+
+    .text-container .imagem-baby-tubarao {
+        content: url("/img/index/mobile.png");
+        width: 120px;
+        position: relative;
+        top: 40%;
+        /* Reduz o tamanho da imagem do baby tubarão */
+    }
+
+    .form-container {
+        padding-top: 30px;
+        /* Diminui o espaçamento entre o topo do formulário e a tela */
+        width: 80%;
+        /* Reduz a largura do formulário */
+    }
+
+    .form-container .titulo-form-conteiner {
+        font-size: 20px;
+        /* Diminui o tamanho da fonte do título do formulário */
+    }
+
+    .form-container .subtitulo-form-conteiner {
+        width: 180px;
+        /* Reduz a largura do subtitulo */
+        height: 80px;
+        /* Diminui a altura do subtitulo */
+        font-size: 16px;
+        /* Diminui o tamanho da fonte do subtitulo */
+    }
+
+    .form-container .botao {
+        width: 250px;
+        /* Reduz a largura do botão */
+        height: 46px;
+        /* Diminui a altura do botão */
+        font-size: 18px;
+        /* Diminui o tamanho da fonte do botão */
+    }
+}
+
+@media only screen and (min-width: 681px) and (max-width: 1024px) {
+
+    /* Insira aqui as regras de estilo que deseja aplicar para telas de tablets */
+    .text-container .sub-title {
+        font-size: 30px;
+    }
+
+    .text-container .imagem-onda {
+        width: 200px;
+    }
+
+    .text-container .imagem-baby-tubarao {
+        width: 300px;
+    }
+
+    .form-container .titulo-form-conteiner {
+        font-size: 22px;
+    }
+
+    .form-container .subtitulo-form-conteiner {
+        width: 200px;
+        height: 85px;
+        font-size: 18px;
+    }
+
+    .form-container .botao {
+        font-size: 18px;
+        width: 250px;
+        height: 50px;
+    }
+}
