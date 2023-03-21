@@ -1,9 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
+div form {
+    margin: 100;
+    padding: 100;
+    border: 100;
     box-sizing: border-box;
-    font-family: inter;
+    font-family: "Inter";
+    line-height: 42px;
+
 }
 
 body {
@@ -14,15 +16,20 @@ body {
     display: flex;
     min-height: 100vh;
     min-width: 100vw;
+    align-items: center;
+    justify-content: center;
 }
 
 div h1 {
     color: #fcf9f9;
-    font-size: 1.5rem;
-    margin-top: 1rem;
+    font-size: 35px;
+    margin-top: 26px;
+    top: 180px;
+    position: center;
     margin-bottom: 1rem;
+    margin-left: 12;
+    margin-top: 1rem;
     text-align: center;
-    margin-left: 3
 }
 
 div form .alternative {
@@ -33,7 +40,8 @@ div form .alternative span {
     font-size: 15px;
     font-weight: 400;
     color: rgb(246, 241, 241);
-    position: relative;
+    position: center;
+    
 }
 
 div form .alternative span::before, madicin .alternative span::after {
@@ -52,12 +60,18 @@ div .alternative span::after {
 
 div form {
     /* margin-left: 1200px; */
+    position:center;
     display: flex;
+    border-radius: 18px;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
     background-color: #f0f2f4;
     width: 387px;
+    height: 380px;
+    top: 302px;
+    border-radius: 26px;
+    
 }
 
 div form label {
@@ -71,12 +85,14 @@ div form label span {
     margin-top: 2rem;
     margin-left: 50px;
     font-weight: 200;
+    
 }
 
 div form input {
     background: #dededf;
-    width: 90%;
-    height: 50px;
+    width: 301px;
+    height: 56px;
+    padding: 20px;
     padding: 0 0.5rem;
     margin-left: 20px;
     outline: none;
@@ -84,7 +100,6 @@ div form input {
     font-size: 1rem;
     border: 1px solid #fafbfc;
     border-radius: 26px;
-    
 }
 
 div form input[type="submit"] {
@@ -94,7 +109,7 @@ div form input[type="submit"] {
     margin-top: 2rem;
     margin-bottom: 1rem;
     border: none;
-    border-radius: 32px;
+    border-radius: 26px;
     background: #ec6816;
     color: rgb(250, 248, 248);
     font-size: 1rem;
