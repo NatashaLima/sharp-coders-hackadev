@@ -115,6 +115,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        height: 78vh;
         /* Altera a direção dos elementos para ficarem empilhados */
     }
 
