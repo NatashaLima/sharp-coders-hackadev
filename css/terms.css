@@ -13,29 +13,30 @@
 }
 
 body {
+  gap: 1.3rem;
+  display: flex;
+  flex-direction: column;
   background-color: var(--primary-color);
 }
 
 img {
   position: fixed;
-  left: 46%;
-  z-index: 1;
+  left: 50%;
+  transform: translate(-30%);
+  z-index: 10;
 }
 
 #modal {
-  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
-  left: 50%;
-  top: 50%;
-  height: 80%;
-  width: 90%;
-  transform: translate(-50%, -55%);
+  margin: auto;
+  height: 80vh;
+  width: 80%;
   background: var(--bg-color);
-  transition: all 0.4s;
-  border-radius: 1rem;
-  padding: 4rem 0.3rem 0rem 0.3rem;
+  border-radius: 2.6rem;
+  padding: 4rem 2rem 0;
+  margin-top: 5rem;
   overflow-y: scroll;
 }
 
@@ -49,21 +50,44 @@ img {
 }
 
 #body-modal p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 footer {
   display: flex;
-  position: fixed;
+  align-items: center;
+
   top: 90%;
   left: 30%;
   gap: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  margin-top: 1.5rem;
+  margin: auto;
 }
 
 footer P {
   color: white;
   width: 34rem;
+}
+
+@media (min-width: 250px) and (max-width: 720px) {
+  #modal {
+    width: 100%;
+  }
+  #modal p {
+    font-size: 1.5rem;
+  }
+}
+
+input[type='checkbox'] {
+  appearance: none;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+input[type='checkbox']:checked:after {
+  content: 'OK';
 }
