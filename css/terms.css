@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+  --primary-color: #111b59;
+  --bg-color: #ebebeb;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+main h1 {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+main p {
+  color: 0000;
+  font-size: 1.5rem;
+}
+
+#msgTermo {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: 0000;
+  font-size: 1.5rem;
+}
+#msgTermo span {
+  color: #f95e1d;
+  cursor: pointer;
+}
+
+#msgTermo p {
+  padding-left: 1.2rem;
+  color: white;
+}
+
+#msgTermo input {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 10rem;
+  border-color: rgb(0, 0, 0);
+  flex-shrink: 0;
+}
+
+#fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(70, 70, 92, 0.9);
+  z-index: 5;
+}
+
+#modal {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  height: 95%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  background: var(--bg-color);
+  transition: all 0.4s;
+  border-radius: 1rem;
+  padding: 2rem;
+  z-index: 10;
+}
+
+#header-modal h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+#body-modal {
+  margin: 1rem;
+}
+
+#body-modal p {
+  font-size: 1.2rem;
+}
+
+#footer-modal {
+  margin-top: 1.5rem;
+  display: flex;
+}
