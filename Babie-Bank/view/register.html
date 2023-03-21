@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <link rel="stylesheet" href="../css/register.css">     
+    <link rel="stylesheet" href="../css/register.css">      
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
@@ -23,33 +23,34 @@
             
         </aside>
 
-        <form action="" class="form-container">
+    <form action="" class="form-container" id="form">
 
-                <label for="cpf"> CPF </label>            
-                <input id="cpf" name="cpf" type="text">                
+        <span class="span-required"> CPF </span>            
+        <input id="cpf" name="cpf" type="text" class="inputs required" oninput="validateCPF()">                
 
-                <label for="username"> Nome Completo </label>            
-                <input id="username" name="username" type="text">                
+        <span class="span-required"> Nome Completo </span>            
+        <input id="username" name="username" type="text" class="inputs required" oninput="validateName()">                              
 
-                <label for="phonenumber"> Celular </label>            
-                <input id="phonenumber" name="phonenumber" type="text">                
+        <span class="span-required"> Celular </span>            
+        <input id="phonenumber" name="phonenumber" type="text" class="inputs required" oninput="validatePhoneNumber()">                
 
-                <label for="email"> Email </label>           
-                <input id="email" name="email" type="text">                
+        <span class="span-required"> Email </span>           
+        <input id="email" name="email" type="text" class="inputs required" oninput="validateEmail()">                
 
-                <label for="senha"> Senha </label>           
-                <input id="password" name="password" type="password">                
+        <span class="span-required"> Senha </span>           
+        <input id="password" name="password" type="password" class="inputs required" oninput="validatePassword()">                
 
-                <label for="confirm"> Confirmar senha </label>            
-                <input id="password" name="password" type="password">                
+        <span class="span-required"> Confirmar senha </span>            
+        <input id="confirmpassword" name="password" type="password" class="inputs required" oninput="validateConfirmPassword()">                
                 
-                <label for="newsletter" class="checkbox-label">
-                <input type="checkbox" id="newsletter" name="newsletter" class="checkbox">
-                <span class="checkbox-text">Li e entendi este Termo de Aceitação para Criação de conta e  concordo com seus termos e condições.</span>
-                </label>
+        <label class="checkbox-label">
+        <input type="checkbox" id="term" name="term" class="checkbox">
+        <span class="checkbox-text">Li e entendi este Termo de Aceitação para Criação de conta e  concordo com seus termos e condições.</span>
+        </label>
                                   
-                <button type="submit"> Cadastrar </button>
+        <button type="button" onclick="validateForm()"> Cadastrar </button>
 
-        </form>
+    </form>
+    <script src="/Babie-Bank/js/modules/register.js"></script>
     </body>
 </html>
