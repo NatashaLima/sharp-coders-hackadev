@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
 body {
     display: flex;
     align-items: center;
@@ -13,6 +8,7 @@ body {
     height: 100vh;
     font-family: 'Inter', sans-serif;
     background: #111B59;
+    text-align: center;
 }
 
 .text-container {
@@ -110,16 +106,22 @@ body {
 }
 
 /* Para telas de celular */
-@media (max-width: 680px) {
+@media (max-width: 980px) {
     body {
         background-image: url("/img/index/background.png");
         background-size: cover;
         background-position: center;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 78vh;
         /* Altera a direção dos elementos para ficarem empilhados */
     }
 
     .text-container-titles {
+        position: relative;
+        top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -127,18 +129,18 @@ body {
     }
 
     .text-container .title {
-        padding: 0 0 15px 0;
+        padding-bottom: 10px;
         font-size: 40px;
         /* Diminui o tamanho da fonte do título */
     }
 
     .text-container .imagem-onda {
-        width: 300px;
+        width: 250px;
         /* Reduz o tamanho da imagem da onda */
     }
 
     .text-container .sub-title {
-        padding: 15px 0 0 0;
+        padding-top: 10px;
         font-size: 24px;
         /* Diminui o tamanho da fonte do título */
     }
@@ -147,14 +149,13 @@ body {
         content: url("/img/index/mobile.png");
         width: 120px;
         position: relative;
-        top: 40%;
+        top: 50%;
         /* Reduz o tamanho da imagem do baby tubarão */
     }
 
     .form-container {
         padding-top: 30px;
         /* Diminui o espaçamento entre o topo do formulário e a tela */
-        width: 80%;
         /* Reduz a largura do formulário */
     }
 
@@ -179,37 +180,5 @@ body {
         /* Diminui a altura do botão */
         font-size: 18px;
         /* Diminui o tamanho da fonte do botão */
-    }
-}
-
-@media only screen and (min-width: 681px) and (max-width: 1024px) {
-
-    /* Insira aqui as regras de estilo que deseja aplicar para telas de tablets */
-    .text-container .sub-title {
-        font-size: 30px;
-    }
-
-    .text-container .imagem-onda {
-        width: 200px;
-    }
-
-    .text-container .imagem-baby-tubarao {
-        width: 300px;
-    }
-
-    .form-container .titulo-form-conteiner {
-        font-size: 22px;
-    }
-
-    .form-container .subtitulo-form-conteiner {
-        width: 200px;
-        height: 85px;
-        font-size: 18px;
-    }
-
-    .form-container .botao {
-        font-size: 18px;
-        width: 250px;
-        height: 50px;
     }
 }
