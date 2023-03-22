@@ -38,7 +38,7 @@ function validateCPF() {
 function validateName() {
   const name = usernameInput.value.trim();
   const errorMessageElement = document.getElementById('name-error-message');
-  if (name.length < 6) {
+  if (name.length < 3) {
     setError(usernameInput, 'O nome deve ter no mínimo 3 caracteres', errorMessageElement);
     return false;
   }
@@ -119,7 +119,7 @@ submitButton.addEventListener('click', (event) => {
   event.preventDefault();
   const formValidado = validateForm();
   if (formValidado) {
-    console.log("Formulárario validade")
+    console.log("Formulárario válido")
   } else {
     console.log('Formulário inválido');
   }

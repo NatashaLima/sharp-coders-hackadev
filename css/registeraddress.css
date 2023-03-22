@@ -147,3 +147,13 @@ button {
   margin-top: 7rem;
   filter: drop-shadow(0px 0px 15px #FFFFFF);
 }
+.error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+  display: none;
+}

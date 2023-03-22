@@ -39,24 +39,28 @@
         <fieldset>
 
           <div id="fieldsInline1">
-            <div class="input-wrapper" id="field-CEP">
+            <div class="input-wrapper" id="field-CEP" >
               <label for="cep">CEP</label>
-              <input type="text" id="cep" name="cep">
+              <input type="text" id="cep" name="cep" oninput="validateCep()">  
+              <span id="cep-error-message" class="error-message"></span> 
             </div>
             <div class="input-wrapper" id="field-UF">
               <label for="uf">UF</label>
-              <input type="text" id="uf" name="uf">
+              <input type="text" id="uf" name="uf" oninput="validateUf()">
+              <span id="uf-error-message" class="error-message"></span>
             </div>
           </div>
 
           <div id="fieldsInline2">
             <div class="input-wrapper" id="field-Endereco">
               <label for="endereco">Endereço</label>
-              <input type="text" id="endereco" name="endereco">
+              <input type="text" id="endereco" name="endereco" oninput="validateEndereco()">
+              <span id="endereco-error-message" class="error-message"></span>
             </div>
             <div class="input-wrapper" id="field-Numero">
               <label for="numero">Nº</label>
-              <input type="text" id="numero" name="numero">
+              <input type="text" id="numero" name="numero" oninput="validateNumero()">
+              <span id="numero-error-message" class="error-message"></span>
             </div>
           </div>
 
@@ -64,17 +68,20 @@
 
           <div class="input-wrapper" id="field-Complemento">
             <label for="complemento">Complemento</label>
-            <input type="text" id="complemento" name="complemento">
+            <input type="text" id="complemento" name="complemento" oninput="validateComplemento()">
+            <span id="complemento-error-message" class="error-message"></span>
           </div>
 
           <div class="input-wrapper" id="field-Bairro">
             <label for="bairro">Bairro</label>
-            <input type="text" id="bairro" name="bairro">
+            <input type="text" id="bairro" name="bairro" oninput="validateBairro()">
+            <span id="bairro-error-message" class="error-message"></span>
           </div>
 
           <div class="input-wrapper" id="field-Cidade">
             <label for="cidade">Cidade</label>
-            <input type="text" id="cidade" name="cidade">
+            <input type="text" id="cidade" name="cidade" oninput="validateCidade()">
+            <span id="cidade-error-message" class="error-message"></span>
           </div>
 
           <button type="submit">Registrar</button>
