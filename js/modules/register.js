@@ -7,13 +7,6 @@ const passwordInput = document.getElementById('password');
 const confirmPasswordInput = document.getElementById('confirmpassword');
 const termCheckbox = document.getElementById('termCheckbox');
 
-cpfInput.value = "12345678900";
-usernameInput.value = "Lucas Ferreira";
-phonenumberInput.value = "17966510506";
-emailInput.value = "lks_ferreira@hotmail.com";
-passwordInput.value = "12345678";
-confirmPasswordInput.value = "12345678";
-
 
 function setError(element, message, errorMessageElement) {
   element.classList.add('error');

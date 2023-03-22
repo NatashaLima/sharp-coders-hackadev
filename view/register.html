@@ -28,7 +28,8 @@
     <div class="registration-form">
         <section class="registration-title">
             <h2>Cadastro<h2>
-            <img src="/img/registeraddress-img/happyshark.png.png" alt="logo tipo de um tubarão fofo estilo desenho infantil">
+                    <img src="/img/registeraddress-img/happyshark.png.png"
+                        alt="logo tipo de um tubarão fofo estilo desenho infantil">
         </section>
         <form action="" class="form-container" id="form">
 
@@ -64,7 +65,8 @@
                     seus <a href="terms.html" id="terms-link">termos e condições</a>.</span>
             </label>
 
-            <button id="botao-cadastrar" type="button" onclick="validateForm()"> Cadastrar </button>
+            <button id="botao-cadastrar" type="button"
+                onclick="if (validateForm()) { window.location.href = 'registeraddress.html'; }">Cadastrar</button>
 
         </form>
     </div>
