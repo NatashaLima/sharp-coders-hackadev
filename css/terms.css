@@ -56,11 +56,10 @@ img {
 footer {
   display: flex;
   align-items: center;
-
   top: 90%;
   left: 30%;
   gap: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
   margin: auto;
 }

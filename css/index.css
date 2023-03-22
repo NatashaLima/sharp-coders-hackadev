@@ -72,7 +72,11 @@ body {
     font-weight: normal;
     text-align: center;
 }
-
+.conjunto-de-botoes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .form-container .botao {
     font-size: 20px;
     font-weight: bold;
@@ -108,14 +112,16 @@ body {
 /* Para telas de celular */
 @media (max-width: 980px) {
     body {
+        background-color: #EBEBEB;
         background-image: url("/img/index/background.png");
+        background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: center center;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        height: 78vh;
+        justify-content: space-around;
+        height: 100vh
         /* Altera a direção dos elementos para ficarem empilhados */
     }
 
@@ -148,15 +154,21 @@ body {
     .text-container .imagem-baby-tubarao {
         content: url("/img/index/mobile.png");
         width: 120px;
-        position: relative;
-        top: 50%;
+        position: fixed;
+        top: 40%;
         /* Reduz o tamanho da imagem do baby tubarão */
     }
 
     .form-container {
+
         padding-top: 30px;
         /* Diminui o espaçamento entre o topo do formulário e a tela */
         /* Reduz a largura do formulário */
+        box-shadow: none;
+        /* remover borda do texto */
+        width: 70%;
+        padding: 0;
+        
     }
 
     .form-container .titulo-form-conteiner {
@@ -173,6 +185,14 @@ body {
         /* Diminui o tamanho da fonte do subtitulo */
     }
 
+    .conjunto-de-botoes{
+        
+        display: flex;
+        flex-direction: row;
+        width: 350px;
+        gap: 20px;
+    }
+    
     .form-container .botao {
         width: 250px;
         /* Reduz a largura do botão */
@@ -181,4 +201,5 @@ body {
         font-size: 18px;
         /* Diminui o tamanho da fonte do botão */
     }
+    
 }
