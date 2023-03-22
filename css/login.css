@@ -2,6 +2,10 @@
     /* .menu { width:100%; } */
 }
 
+main {
+    display: flex;
+}
+
 div form {
     margin: 100;
     padding: 100;
@@ -25,6 +29,7 @@ body {
 }
 
 div h1 {
+    font-family: 'Inter', sans-serif;
     color: #fcf9f9;
     font-size: 35px;
     margin-top: 26px;
@@ -45,10 +50,11 @@ div form .alternative span {
     font-weight: 400;
     color: rgb(246, 241, 241);
     position: center;
-    
+
 }
 
-div form .alternative span::before, madicin .alternative span::after {
+div form .alternative span::before,
+madicin .alternative span::after {
     position: absolute;
     content: '';
     height: 380px;
@@ -64,7 +70,7 @@ div .alternative span::after {
 
 div form {
     /* margin-left: 1200px; */
-    position:center;
+    position: center;
     display: flex;
     border-radius: 18px;
     flex-direction: column;
@@ -75,10 +81,28 @@ div form {
     height: 380px;
     top: 302px;
     border-radius: 26px;
-    
+
 }
 
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 275px;
+    height: 55px;
+    border-style: none;
+    background: #F95E1D;
+    border-radius: 26px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+
 div form label {
+    margin-left: 30px;
     display: flex;
     flex-direction: column;
     color: #010966;
@@ -89,7 +113,7 @@ div form label span {
     margin-top: 2rem;
     margin-left: 50px;
     font-weight: 200;
-    
+
 }
 
 div form input {
@@ -123,16 +147,13 @@ div form input[type="submit"] {
 
 div form input[type="submit"]:hover {
     background: #ff8402;
-    
+
 }
 
 section.images {
-    
-    width: 50vw;
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end;
-    padding: 4rem;
+    justify-content: center;
 }
 
 section.images img {
@@ -142,10 +163,10 @@ section.images img {
 
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
     section.images img {
-        width: 110%;
+        /*width: 110%;*/
     }
 
-    
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -154,13 +175,18 @@ section.images img {
         visibility: hidden;
     }
 
+    /*
+
     div {
         width: 100vw;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 450px) {
     div h1 {
+        font-family: 'Inter', sans-serif;
+        font-style: bold;
+        font-weight: 700;
         font-size: 2rem;
     }
 
@@ -168,7 +194,8 @@ section.images img {
         font-size: 0.8rem;
     }
 
-    div form label span, div form input[type="submit"] {
+    div form label span,
+    div form input[type="submit"] {
         font-size: 1rem;
     }
 }

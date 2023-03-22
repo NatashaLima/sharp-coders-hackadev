@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,24 +18,42 @@
 </head>
 
 <body>
-    <section class="images">
-        <img src="/img/heyshark.png">
-    </section>
-    <div id="login-container">
-        <h1>Acesso</h1>
-        <form action="">
-            <label for="register-container"> Cpf</label>
-            <input type="cpf" name="cpf" id="cpf" placeholder="Digite o cpf" autocomplete="of">
-            <label for="password">Senha</label>
-            <input type="password" name="password" id="password" placeholder="Digite sua senha">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/lib/fontawesome/5.12.1/css/all.min.css">
-            <p><i class="fa-solid fa-square-check"></i>Lembrar minha conta</p>
-            <a href="#" id="forgot-pass">Esqueceu a senha?</a>
-            <input type="submit" value="Login">
-        </form>
-        <div id="social-container"></div>
 
-        <script src="/js/modules/login.js"></script>
+    <main>
+
+        <section class="images">
+            <img src="/img/heyshark.png">
+        </section>
+
+        <div id="login-container">
+            <h1>Acesso</h1>
+            <form action="">
+                <fieldset>
+
+                    <label for="register-container"> Cpf</label>
+                    <input type="cpf" name="cpf" id="cpf" placeholder="Digite o cpf" autocomplete="of">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                    <link rel="stylesheet"
+                        href="https://cdnjs.cloudflare.com/ajax/lib/fontawesome/5.12.1/css/all.min.css">
+
+                    <div class="input-wrapper">
+                        <p><i class="fa-solid fa-square-check"></i>Lembrar minha conta</p>
+                        <a href="#" id="forgot-pass">Esqueceu a senha?</a>
+                        
+                    </div>
+
+                    <button type="submit">Acessar</button>
+
+                </fieldset>
+            </form>
+            <div id="social-container"></div>
+
+            <script src="/js/modules/login.js"></script>
+
+
+    </main>
+
 </body>
 
 </html>
