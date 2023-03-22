@@ -22,6 +22,22 @@ img {
   z-index: 1;
 }
 
+#moldura-externa {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  height: 85%;
+  width: 70%;
+  transform: translate(-50%, -55%);
+  background: var(--bg-color);
+  transition: all 0.4s;
+  border-radius: 2.6rem;
+
+}
+
 #modal {
   position: fixed;
   display: flex;
@@ -29,8 +45,8 @@ img {
   align-items: center;
   left: 50%;
   top: 50%;
-  height: 80%;
-  width: 90%;
+  height: 85%;
+  width: 98%;
   transform: translate(-50%, -55%);
   background: var(--bg-color);
   transition: all 0.4s;
@@ -41,11 +57,14 @@ img {
 
 #header-modal h1 {
   font-size: 2rem;
+  margin: 1rem;
+  text-align: center;
   color: var(--primary-color);
 }
 
 #body-modal {
   margin: 1rem;
+  text-align: justify;
 }
 
 #body-modal p {
@@ -56,7 +75,7 @@ footer {
   display: flex;
   position: fixed;
   top: 90%;
-  left: 30%;
+  left: 35%;
   gap: 1rem;
   font-size: 1.3rem;
   font-weight: 600;
@@ -66,4 +85,54 @@ footer {
 footer P {
   color: white;
   width: 34rem;
+}
+
+@media (max-width: 980px) {
+  body {
+    display: flex;
+    height: 85vh;
+    box-sizing: border-box;
+  }
+
+  img {
+    left: 40%;
+    display: none;
+  }
+
+  #moldura-externa {
+    height: 95%;
+    width: 90%;
+    border-radius: 2rem;
+  }
+
+  #modal {
+    height: 90%;
+    width: 98%;
+    border-radius: 1rem;
+    padding: 2rem 0.3rem 1rem 0.3rem;
+  }
+
+  #header-modal h1 {
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  #body-modal p {
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+
+  footer {
+    top: 84%;
+    left: 15%;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  footer p {
+    color: #000;
+    width: 25rem;
+  }
 }
