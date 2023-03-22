@@ -13,73 +13,55 @@
 }
 
 body {
+  gap: 1.3rem;
+  display: flex;
+  flex-direction: column;
   background-color: var(--primary-color);
 }
 
 img {
   position: fixed;
-  left: 46%;
-  z-index: 1;
-}
-
-#moldura-externa {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   left: 50%;
-  top: 50%;
-  height: 85%;
-  width: 70%;
-  transform: translate(-50%, -55%);
-  background: var(--bg-color);
-  transition: all 0.4s;
-  border-radius: 2.6rem;
-
+  transform: translate(-30%);
+  z-index: 10;
 }
 
 #modal {
-  position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
-  left: 50%;
-  top: 50%;
-  height: 85%;
-  width: 98%;
-  transform: translate(-50%, -55%);
+  margin: auto;
+  height: 80vh;
+  width: 80%;
   background: var(--bg-color);
-  transition: all 0.4s;
-  border-radius: 1rem;
-  padding: 4rem 0.3rem 0rem 0.3rem;
+  border-radius: 2.6rem;
+  padding: 4rem 2rem 0;
+  margin-top: 5rem;
   overflow-y: scroll;
 }
 
 #header-modal h1 {
   font-size: 2rem;
-  margin: 1rem;
-  text-align: center;
   color: var(--primary-color);
 }
 
 #body-modal {
   margin: 1rem;
-  text-align: justify;
 }
 
 #body-modal p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 footer {
   display: flex;
-  position: fixed;
+  align-items: center;
   top: 90%;
-  left: 35%;
+  left: 30%;
   gap: 1rem;
   font-size: 1.3rem;
   font-weight: 600;
-  margin-top: 1.5rem;
+  margin: auto;
 }
 
 footer P {
@@ -87,52 +69,24 @@ footer P {
   width: 34rem;
 }
 
-@media (max-width: 980px) {
-  body {
-    display: flex;
-    height: 85vh;
-    box-sizing: border-box;
-  }
-
-  img {
-    left: 40%;
-    display: none;
-  }
-
-  #moldura-externa {
-    height: 95%;
-    width: 90%;
-    border-radius: 2rem;
-  }
-
+@media (min-width: 250px) and (max-width: 720px) {
   #modal {
-    height: 90%;
-    width: 98%;
-    border-radius: 1rem;
-    padding: 2rem 0.3rem 1rem 0.3rem;
+    width: 100%;
   }
+  #modal p {
+    font-size: 1.5rem;
+  }
+}
 
-  #header-modal h1 {
-    font-size: 2rem;
-    margin: 1rem;
-    text-align: center;
-    font-size: 1.8rem;
-  }
+input[type='checkbox'] {
+  appearance: none;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+}
 
-  #body-modal p {
-    font-size: 1.1rem;
-    text-align: justify;
-  }
-
-  footer {
-    top: 84%;
-    left: 15%;
-    font-size: 1.2rem;
-    margin-top: 1rem;
-  }
-  
-  footer p {
-    color: #000;
-    width: 25rem;
-  }
+input[type='checkbox']:checked:after {
+  content: 'OK';
 }
