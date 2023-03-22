@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="../css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> -->
+    <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <title>Login</title>
@@ -19,40 +19,46 @@
 
 <body>
 
-    <main>
+    
+        <section class="imagem">
+            <img src="../img/heyshark.png">
 
-        <section class="images">
-            <img src="/img/heyshark.png">
         </section>
+             
 
-        <div id="login-container">
-            <h1>Acesso</h1>
-            <form action="">
-                <fieldset>
 
-                    <label for="register-container"> Cpf</label>
-                    <input type="cpf" name="cpf" id="cpf" placeholder="Digite o cpf" autocomplete="of">
-                    <label for="password">Senha</label>
-                    <input type="password" name="password" id="password" placeholder="Digite sua senha">
-                    <link rel="stylesheet"
-                        href="https://cdnjs.cloudflare.com/ajax/lib/fontawesome/5.12.1/css/all.min.css">
+        <div class="login-form">
+            <section class="title-form">
+                <h2>Acesso</h1>
+            </section>
+            
+            
+            <form action="" class="form-container" id = "form-register">
 
-                    <div class="input-wrapper">
-                        <p><i class="fa-solid fa-square-check"></i>Lembrar minha conta</p>
-                        <a href="#" id="forgot-pass">Esqueceu a senha?</a>
-                        
-                    </div>
+                    <span class="span-required"> CPF </span>
+                    <input id="cpf-register" name="cpf" type="text" class="inputs required">
+                    <span id="cpf-error-message" class="error-message"></span>
 
-                    <button type="submit">Acessar</button>
+                    <span class="span-required"> Senha </span>
+                    <input id="cpf-register" name="senha" type="text" class="inputs required">
+                    <span id="password-error-message" class="error-message"></span>
 
-                </fieldset>
+                    <section class = "checkesenha">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="sessionCheckbox" name="sessionCheckbox" class="checkbox">
+                        <span class="checkbox-text"> Lembrar conta</span>
+                    </label>
+                        <a href="../view/recpassword.html" id="forgot-pass">Esqueceu a senha?</a>
+                    </section>
+                     
+                    <button id="botao-registrar" type="button">Acessar</button>
+
             </form>
-            <div id="social-container"></div>
-
+            
             <script src="/js/modules/login.js"></script>
+        </div>
 
-
-    </main>
+    
 
 </body>
 
