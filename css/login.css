@@ -1,3 +1,7 @@
+@media only screen and (max-device-width: 900px) {
+    /* .menu { width:100%; } */
+}
+
 div form {
     margin: 100;
     padding: 100;
