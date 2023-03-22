@@ -19,8 +19,13 @@ body {
     color: #F95E1D;
     font-weight: bold;
 }
+.span-required{
 
+    margin-left:20px;
+
+}
 .registration-form {
+    margin-bottom: -120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,9 +96,10 @@ h2 {
 }
 
 #botao-cadastrar:hover {
-    background-color: black;
+    background-color: #de7c51;
     color: #EBEBEB;
     cursor: pointer;
+    transition: all .3s ease-in-out;
 }
 
 /*validação de dados*/
