@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
 body {
     display: flex;
     align-items: center;
@@ -13,6 +8,7 @@ body {
     height: 100vh;
     font-family: 'Inter', sans-serif;
     background: #111B59;
+    text-align: center;
 }
 
 .text-container {
@@ -76,7 +72,11 @@ body {
     font-weight: normal;
     text-align: center;
 }
-
+.conjunto-de-botoes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .form-container .botao {
     font-size: 20px;
     font-weight: bold;
@@ -110,16 +110,24 @@ body {
 }
 
 /* Para telas de celular */
-@media (max-width: 680px) {
+@media (max-width: 980px) {
     body {
+        background-color: #EBEBEB;
         background-image: url("/img/index/background.png");
+        background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: center center;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100vh
         /* Altera a direção dos elementos para ficarem empilhados */
     }
 
     .text-container-titles {
+        position: relative;
+        top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -127,18 +135,18 @@ body {
     }
 
     .text-container .title {
-        padding: 0 0 15px 0;
+        padding-bottom: 10px;
         font-size: 40px;
         /* Diminui o tamanho da fonte do título */
     }
 
     .text-container .imagem-onda {
-        width: 300px;
+        width: 250px;
         /* Reduz o tamanho da imagem da onda */
     }
 
     .text-container .sub-title {
-        padding: 15px 0 0 0;
+        padding-top: 10px;
         font-size: 24px;
         /* Diminui o tamanho da fonte do título */
     }
@@ -146,16 +154,21 @@ body {
     .text-container .imagem-baby-tubarao {
         content: url("/img/index/mobile.png");
         width: 120px;
-        position: relative;
+        position: fixed;
         top: 40%;
         /* Reduz o tamanho da imagem do baby tubarão */
     }
 
     .form-container {
+
         padding-top: 30px;
         /* Diminui o espaçamento entre o topo do formulário e a tela */
-        width: 80%;
         /* Reduz a largura do formulário */
+        box-shadow: none;
+        /* remover borda do texto */
+        width: 70%;
+        padding: 0;
+        
     }
 
     .form-container .titulo-form-conteiner {
@@ -172,6 +185,14 @@ body {
         /* Diminui o tamanho da fonte do subtitulo */
     }
 
+    .conjunto-de-botoes{
+        
+        display: flex;
+        flex-direction: row;
+        width: 350px;
+        gap: 20px;
+    }
+    
     .form-container .botao {
         width: 250px;
         /* Reduz a largura do botão */
@@ -180,36 +201,5 @@ body {
         font-size: 18px;
         /* Diminui o tamanho da fonte do botão */
     }
-}
-
-@media only screen and (min-width: 681px) and (max-width: 1024px) {
-
-    /* Insira aqui as regras de estilo que deseja aplicar para telas de tablets */
-    .text-container .sub-title {
-        font-size: 30px;
-    }
-
-    .text-container .imagem-onda {
-        width: 200px;
-    }
-
-    .text-container .imagem-baby-tubarao {
-        width: 300px;
-    }
-
-    .form-container .titulo-form-conteiner {
-        font-size: 22px;
-    }
-
-    .form-container .subtitulo-form-conteiner {
-        width: 200px;
-        height: 85px;
-        font-size: 18px;
-    }
-
-    .form-container .botao {
-        font-size: 18px;
-        width: 250px;
-        height: 50px;
-    }
+    
 }

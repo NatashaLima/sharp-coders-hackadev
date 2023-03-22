@@ -1,69 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <link rel="stylesheet" href="/css/register.css">      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="../js/modules/register.js" defer></script>
 
-    <title>Página de cadastro</title>
+    <title>Cadastro</title>
 </head>
-    <body>        
-         
-        <aside class="text-container">
-            <h4> 
-                <br> Olá! </br> 
-                Seja bem-vindo ao 
-                <br> <span class="orange-text">Shark Bank</span> </br> 
-            </h4>
-            
-        </aside>
 
-    <div id="registration-form">
-        <section id="registration-title">
+<body>
+    <div class="text-container">
+        <h4>
+            Olá! </br>
+            Seja bem-vindo ao <br>
+            <span class="orange-text">Shark Bank</span>
+        </h4>
+    </div>
+
+    <div class="registration-form">
+        <section class="registration-title">
             <h2>Cadastro<h2>
-                <img src="/img/registeraddress-img/happyshark.png.png" alt="">
+                <img src="../img/registeraddress-img/happyshark.png.png" alt="">
           </section>
-        <form action="register.js" class="form-container" id="form">
+        <form action="" class="form-container" id="form">
 
-            <span class="span-required"> CPF </span>            
+            <span class="span-required"> CPF </span>
             <input id="cpf" name="cpf" type="text" class="inputs required" oninput="validateCPF()">
-            <span id="cpf-error-message" class="error-message"></span>                        
+            <span id="cpf-error-message" class="error-message"></span>
 
-            <span class="span-required"> Nome completo </span>            
-            <input id="username" name="username" type="text" class="inputs required" oninput="validateName()">                              
+            <span class="span-required"> Nome completo </span>
+            <input id="username" name="username" type="text" class="inputs required" oninput="validateName()">
             <span id="name-error-message" class="error-message"></span>
 
-            <span class="span-required"> Celular </span>            
-            <input id="phonenumber" name="phonenumber" type="text" class="inputs required" oninput="validatePhoneNumber()">                
+            <span class="span-required"> Celular </span>
+            <input id="phonenumber" name="phonenumber" type="text" class="inputs required"
+                oninput="validatePhoneNumber()">
             <span id="phonenumber-error-message" class="error-message"></span>
 
-            <span class="span-required"> Email </span>           
-            <input id="email" name="email" type="text" class="inputs required" oninput="validateEmail()">                
+            <span class="span-required"> Email </span>
+            <input id="email" name="email" type="text" class="inputs required" oninput="validateEmail()">
             <span id="email-error-message" class="error-message"></span>
 
-            <span class="span-required"> Senha </span>           
-            <input id="password" name="password" type="password" class="inputs required" oninput="validatePassword()">                
+            <span class="span-required"> Senha </span>
+            <input id="password" name="password" type="password" class="inputs required" oninput="validatePassword()">
             <span id="password-error-message" class="error-message"></span>
 
-            <span class="span-required"> Confirmar senha </span>            
-            <input id="confirmpassword" name="password" type="password" class="inputs required" oninput="validateConfirmPassword()">                
+            <span class="span-required"> Confirmar senha </span>
+            <input id="confirmpassword" name="password" type="password" class="inputs required"
+                oninput="validateConfirmPassword()">
             <span id="confirmpassword-error-message" class="error-message"></span>
-    
+
             <label class="checkbox-label">
                 <input type="checkbox" id="termCheckbox" name="termCheckbox" class="checkbox">
-                <span class="checkbox-text">Li e entendi este termo de aceitação para criação de conta e concordo com seus <a href="terms.html" id="terms-link">termos e condições</a>.</span>
+                <span class="checkbox-text">Li e entendi este termo de aceitação para criação de conta e concordo com
+                    seus <a href="terms.html" id="terms-link">termos e condições</a>.</span>
             </label>
-            
-                                    
-            <button type="button" onclick="validateForm()"> Cadastrar </button>
+
+            <button id="botao-cadastrar" type="button"
+                onclick="if (validateForm()) { window.location.href = 'registeraddress.html'; }">Cadastrar</button>
 
         </form>
     </div>
-    <script src="/js/modules/register.js"></script>
-    </body>
+</body>
+
 </html>
