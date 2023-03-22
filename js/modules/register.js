@@ -127,17 +127,52 @@ submitButton.addEventListener('click', (event) => {
   //Adicionando informações do formulário no local storage
   const form = document.getElementById("form");
 
-  form.addEventListener("submit", function(event) {
+  form.addEventListener("submit", function (event) {
     event.preventDefault(); // previne o envio do formulário
-  
+
     // Armazena os valores dos campos do formulário no Local Storage
     localStorage.setItem("cpf", document.getElementById("cpf").value);
     localStorage.setItem("username", document.getElementById("username").value);
     localStorage.setItem("phonenumber", document.getElementById("phonenumber").value);
     localStorage.setItem("email", document.getElementById("email").value);
     localStorage.setItem("password", document.getElementById("password").value);
-  
+
     // Redireciona o usuário para outra página
-    window.location.href = "registeraddress.html";
+    window.location.href = "registeraddress.html"; saveFormData();
   });
 });
+
+function saveFormData() {
+  // Crie um objeto com os valores do formulário
+  const formData = {
+    cpf: cpfInput.value.trim(),
+    username: usernameInput.value.trim(),
+    phonenumber: phonenumberInput.value.trim(),
+    email: emailInput.value.trim(),
+    password: passwordInput.value.trim()
+  };
+
+  // Converta o objeto em uma string JSON
+  const formDataJson = JSON.stringify(formData);
+
+  // Armazene a string JSON na local storage
+  localStorage.setItem('formData', formDataJson);
+}
+
+function loadFormData() {
+  // Obtenha a string JSON armazenada na local storage
+  const formDataJson = localStorage.getItem('formData');
+
+  // Se houver dados na local storage, preencha os campos do formulário
+  if (formDataJson) {
+    const formData = JSON.parse(formDataJson);
+    cpfInput.value = formData.cpf;
+    usernameInput.value = formData.username;
+    phonenumberInput.value = formData.phonenumber;
+    emailInput.value = formData.email;
+    passwordInput.value = formData.password;
+  }
+}
+
+// Chame a função loadFormData quando a página carregar
+window.onload = loadFormData;
