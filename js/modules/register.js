@@ -132,4 +132,20 @@ function validateForm() {
     }  
   }
 
- 
+  //Adicionando informações do formulário no local storage
+  const form = document.getElementById("form");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); // previne o envio do formulário
+  
+    // Armazena os valores dos campos do formulário no Local Storage
+    localStorage.setItem("cpf", document.getElementById("cpf").value);
+    localStorage.setItem("username", document.getElementById("username").value);
+    localStorage.setItem("phonenumber", document.getElementById("phonenumber").value);
+    localStorage.setItem("email", document.getElementById("email").value);
+    localStorage.setItem("password", document.getElementById("password").value);
+  
+    // Redireciona o usuário para outra página
+    window.location.href = "registeraddress.html";
+  });
+  
