@@ -13,9 +13,9 @@ const botaoLogin = document.getElementById("botao-login");
 botaoLogin.addEventListener('click', entrar);
 
 function entrar() {
-    if (formDataJson.cpf == cpf.value && formDataJson.password == password.value) {
-        window.location.href = "https://github.com/LKSFerreira/sharp-coders-hackadev";
-    } else {
+    if (!(formDataJson.cpf == cpf.value && formDataJson.password == password.value) || (cpf.value =="" || password.value =="")) {
         alert('CPF ou Senha incorretos, tente novamente');
+    } else {
+        window.location.href = "https://github.com/LKSFerreira/sharp-coders-hackadev";
     }
 }

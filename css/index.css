@@ -19,8 +19,8 @@ body {
 
 .text-container .title {
     font-family: 'Inter', sans-serif;
-    font-size: 60px;
-    color: #fff;
+    font-size: 45px;
+    color: #F95E1D;
     justify-content: center;
     font-weight: bold;
 }
@@ -34,8 +34,8 @@ body {
 .text-container .sub-title {
     font-family: 'Inter', sans-serif;
     font-weight: bold;
-    font-size: 30px;
-    color: #F95E1D;
+    font-size: 25px;
+    color: #fff;
     justify-content: center;
 }
 

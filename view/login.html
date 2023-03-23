@@ -12,7 +12,7 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> -->
     <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/form.css">
 
@@ -22,46 +22,41 @@
 
 <body>
 
-    
-        <section class="imagem">
-            <img src="../img/heyshark.png">
+    <section class="imagem">
+        <img src="../img/heyshark.png">
+    </section>
 
+    <div class="form">
+        <section class="title-form">
+            <h2>Acesso</h1>
         </section>
-             
+        <form action="" class="form-container" id="form-register">
 
+            <span class="span-required"> CPF </span>
+            <input id="cpf-login" name="cpf" type="text" class="inputs required">
+            <span id="cpf-error-message" class="error-message"></span>
 
-        <div class="login-form">
-            <section class="title-form">
-                <h2>Acesso</h1>
+            <span class="span-required"> Senha </span>
+            <input id="password-login" name="senha" type="password" class="inputs required">
+            <span id="password-error-message" class="error-message"></span>
+
+            <section class="checksenha">
+
+                <input type="checkbox" id="sessionCheckbox" name="sessionCheckbox" class="checkbox">
+                <div class="checkbox-text">Lembrar conta</div>
+
+                <a href="../view/recpassword.html" id="forgot-pass">Esqueceu a senha?</a>
+
             </section>
-            
-            
-            <form action="" class="form-container" id = "form-register">
+            <button id="botao-login" type="button">Acessar</button>
 
-                    <span class="span-required"> CPF </span>
-                    <input id="cpf-login" name="cpf" type="text" class="inputs required">
-                    <span id="cpf-error-message" class="error-message"></span>
 
-                    <span class="span-required"> Senha </span>
-                    <input id="password-login" name="senha" type="text" class="inputs required">
-                    <span id="password-error-message" class="error-message"></span>
+        </form>
 
-                    <section class = "checkesenha">
-                    <label class="checkbox-label">
-                        <input type="checkbox" id="sessionCheckbox" name="sessionCheckbox" class="checkbox">
-                        <span class="checkbox-text"> Lembrar conta</span>
-                    </label>
-                        <a href="../view/recpassword.html" id="forgot-pass">Esqueceu a senha?</a>
-                    </section>
-                     
-                    <button id="botao-login" type="button">Acessar</button>
 
-            </form>
-            
-            
-        </div>
+    </div>
 
-    
+
 
 </body>
 
