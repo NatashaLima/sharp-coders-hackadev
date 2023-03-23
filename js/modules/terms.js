@@ -1,24 +1,24 @@
-const inputTermo = document.querySelector('#inputAceiteTermo')
+const inputTermos = document.getElementById('inputAceiteTermos');
 
-load()
 
-function load() {
-  termCheckbox = JSON.parse(localStorage.getItem('dbTermo')) || []
-}
+function saveFormData() {
+  let formDataJson = localStorage.getItem('formData');
+  let formDataObject = JSON.parse(formDataJson);
 
-function save() {
-  localStorage.setItem('dbTermo', JSON.stringify('ok'))
-  voltarPaginaAnterior()
-  console.log('salvou')
+  formDataObject.termos = inputTermos.checked;
+
+  formDataJson = JSON.stringify(formDataObject);
+  localStorage.setItem('formData', formDataJson);
+
+  voltarPaginaAnterior();
 }
 
 function voltarPaginaAnterior() {
-  window.open('./register', '_self')
-  console.log('voltou')
+  window.open('./register.html', '_self')
 }
 
-inputTermo.addEventListener('change', function () {
-  if (this.checked) {
-    save()
-  }
-})
+inputTermos.addEventListener('change', function () {
+  setTimeout(() => {
+    saveFormData();
+  }, 1500);
+},);

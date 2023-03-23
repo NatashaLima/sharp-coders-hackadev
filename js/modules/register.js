@@ -115,22 +115,17 @@ function validateForm() {
   }
 }
 
-// Adiciona um listener para o botão de envio do formulário
-const submitButton = document.getElementById('botao-cadastrar');
+const formData = loadFormData();
 
-submitButton.addEventListener('click', (event) => {
-  event.preventDefault();
-  const formValidado = validateForm();
-  if (formValidado) {
-    
-    saveFormData();
-
-    window.location.href = 'registeraddress.html';
-  }
+termCheckbox.addEventListener('change', function () {
+  salvarJsonFormData();
 });
 
- // Crie um objeto com os valores do formulário
-const formData = {
+
+function salvarJsonFormData() {
+  // Crie um objeto com os valores do formulário
+  const formData = {
+    termos: termCheckbox.checked,
     cpf: cpfInput.value.trim(),
     username: usernameInput.value.trim(),
     phonenumber: phonenumberInput.value.trim(),
@@ -138,8 +133,13 @@ const formData = {
     password: passwordInput.value.trim()
   };
 
-function saveFormData() {
-    // Converta o objeto em uma string JSON
+  saveFormData(formData)
+
+  return formData;
+}
+
+function saveFormData(formData) {
+  // Converta o objeto em uma string JSON
   const formDataJson = JSON.stringify(formData);
 
   // Armazene a string JSON na local storage
@@ -148,7 +148,7 @@ function saveFormData() {
 
 function loadFormData() {
   // Obtenha a string JSON armazenada na local storage
-  const formDataJson = localStorage.getItem('formData');
+  const formDataJson = localStorage.getItem('formData') || salvarJsonFormData();
 
   // Se houver dados na local storage, preencha os campos do formulário
   if (formDataJson) {
@@ -159,10 +159,29 @@ function loadFormData() {
     phonenumberInput.value = formData.phonenumber;
     emailInput.value = formData.email;
     passwordInput.value = formData.password;
+    termCheckbox.checked = formData.termos;
 
-    formData.add(formAddress);
+    return formDataJson;
   }
 }
 
-// Chame a função loadFormData quando a página carregar
-window.onload = loadFormData;
+const termLink = document.getElementById("terms-link");
+
+termLink.addEventListener('click', function () {
+  salvarJsonFormData();
+  window.location.href = ("terms.html");
+});
+
+// Adiciona um listener para o botão de envio do formulário
+const submitButton = document.getElementById('botao-cadastrar');
+
+submitButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  const formValidado = validateForm();
+  if (formValidado) {
+
+    saveFormData(salvarJsonFormData());
+
+    window.location.href = 'registeraddress.html';
+  }
+});

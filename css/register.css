@@ -65,6 +65,9 @@ h2 {
     color: #F95E1D;
     font-size: 15px;
 }
+#terms-link:hover {
+    cursor: pointer;
+}
 
 .checkbox-label {
     display: flex;
