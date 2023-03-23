@@ -42,11 +42,10 @@ body {
 h2 {
     font-size: 35px;
     display: inline-block;
-
     color: #EBEBEB;
 }
 
-.form-container {
+#form {
     position: relative;
     width: 380px;
     height: 650px;
@@ -55,6 +54,14 @@ h2 {
     box-shadow: 0px 4px 18px 6px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin-top: -37px;
+}
+.form-container {
+    background: #EBEBEB;
+    border-radius: 26px;
+    box-shadow: 0px 4px 18px 6px rgba(0, 0, 0, 0.25);
     gap: 10px;
     padding: 20px;
     margin-top: -37px;
