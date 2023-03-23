@@ -181,6 +181,5 @@ botaoRegistrar.addEventListener('click', (event) => {
   event.preventDefault();
   saveFormDataAddress();
   alert("Cadastro realizado com sucesso, aguarde 5 dias úteis para receber seu SharkCard");
-  localStorage.removeItem("formData");
   window.open('login.html');
 });
