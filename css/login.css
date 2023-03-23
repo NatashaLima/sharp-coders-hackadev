@@ -93,7 +93,7 @@ form label span {
 }
 
 
-#botao-registrar {
+#botao-login {
     width: 70%;
     color: #fff;
     background-color: #F95E1D;
@@ -106,7 +106,7 @@ form label span {
     margin-left: 50px;
 }
 
-#botao-registrar:hover {
+#botao-login:hover {
     background-color: #de7c51;
     color: #EBEBEB;
     cursor: pointer;
