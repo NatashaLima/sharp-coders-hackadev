@@ -22,9 +22,9 @@ function validateUf() {
   const ufRegex = /^[A-Za-z]{2}$/;
 
   if (!ufRegex.test(ufValue)) {
-    console.log('UF inválido');
+    console.log('*Obrigatório*');
     ufInput.classList.add('error');
-    setError(ufInput, 'UF inválido', ufErrorMessage);
+    setError(ufInput, '*Obrigatório*', ufErrorMessage);
     return false;
   } else {
     ufInput.classList.remove('error');
@@ -38,10 +38,10 @@ function validateEndereco() {
   const enderecoValue = enderecoInput.value.trim();
   const enderecoErrorMessage = document.getElementById('endereco-error-message');
 
-  if (enderecoValue === '') {
-    console.log('Endereço é obrigatório');
+  if (enderecoValue ==='') {
+    console.log('*Obrigatório*');
     enderecoInput.classList.add('error');
-    setError(enderecoInput, 'Endereço é obrigatório', enderecoErrorMessage);
+    setError(enderecoInput, '*Obrigatório*', enderecoErrorMessage);
     return false;
   } else {
     enderecoInput.classList.remove('error');
@@ -54,32 +54,16 @@ function validateNumero() {
   const numeroInput = document.getElementById('numero');
   const numeroValue = numeroInput.value.trim();
   const numeroErrorMessage = document.getElementById('numero-error-message');
+  const numeroRegex = /^[0-9]+$/
 
-  if (numeroValue === '') {
-    console.log('Número é obrigatório');
+  if (!numeroRegex.test(numeroValue)) {
+    console.log('*Obrigatório*');
     numeroInput.classList.add('error');
-    setError(numeroInput, 'Número é obrigatório', numeroErrorMessage);
+    setError(numeroInput, '*Obrigatório*', numeroErrorMessage);
     return false;
   } else {
     numeroInput.classList.remove('error');
     clearError(numeroInput, numeroErrorMessage);
-    return true;
-  }
-}
-
-function validateComplemento() {
-  const complementoInput = document.getElementById('complemento');
-  const complementoValue = complementoInput.value.trim();
-  const complementoErrorMessage = document.getElementById('complemento-error-message');
-
-  if (complementoValue === '') {
-    console.log('O Complemento é obrigatório');
-    complementoInput.classList.add('error');
-    setError(complementoInput, 'O Complemento é obrigatório', complementoErrorMessage);
-    return false;
-  } else {
-    complementoInput.classList.remove('error');
-    clearError(complementoInput, complementoErrorMessage);
     return true;
   }
 }
@@ -89,10 +73,10 @@ function validateBairro() {
   const bairroValue = bairroInput.value.trim();
   const bairroErrorMessage = document.getElementById('bairro-error-message');
 
-  if (bairroValue === '') {
-    console.log('Bairro é obrigatório');
+  if (bairroValue ==='') {
+    console.log('*Obrigatório*');
     bairroInput.classList.add('error');
-    setError(bairroInput, 'Bairro é obrigatório', bairroErrorMessage);
+    setError(bairroInput, '*Obrigatório*', bairroErrorMessage);
     return false;
   } else {
     bairroInput.classList.remove('error');
@@ -107,9 +91,9 @@ function validateCidade() {
   const cidadeErrorMessage = document.getElementById('cidade-error-message');
 
   if (cidadeValue === '') {
-    console.log('Cidade é obrigatória');
+    console.log('*Obrigatório*');
     cidadeInput.classList.add('error');
-    setError(cidadeInput, 'Cidade é obrigatória', cidadeErrorMessage);
+    setError(cidadeInput, '*Obrigatório*', cidadeErrorMessage);
     return false;
   } else {
     cidadeInput.classList.remove('error');

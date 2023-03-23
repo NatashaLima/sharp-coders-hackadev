@@ -33,29 +33,27 @@
         <form action="" class="form-container" id="form">
 
             <span class="span-required"> CPF </span>
-            <input id="cpf" name="cpf" type="text" class="inputs required" oninput="validateCPF()">
+            <input id="cpf" name="cpf" type="text" class="required" data-error-message="Por favor, preencha o campo CPF" oninput="validateCPF()">
             <span id="cpf-error-message" class="error-message"></span>
 
             <span class="span-required"> Nome completo </span>
-            <input id="username" name="username" type="text" class="inputs required" oninput="validateName()">
+            <input id="username" name="username" type="text" class="required" data-error-message="Por favor, preencha o campo Nome completo" oninput="validateCPF()">
             <span id="name-error-message" class="error-message"></span>
 
             <span class="span-required"> Celular </span>
-            <input id="phonenumber" name="phonenumber" type="text" class="inputs required"
-                oninput="validatePhoneNumber()">
+            <input id="phonenumber" name="phonenumber" type="text" class="required" data-error-message="Por favor, preencha o celular" oninput="validateCPF()">
             <span id="phonenumber-error-message" class="error-message"></span>
 
             <span class="span-required"> Email </span>
-            <input id="email" name="email" type="text" class="inputs required" oninput="validateEmail()">
+            <input id="email" name="email" type="text" class="required" data-error-message="Inserir email" oninput="validateCPF()">
             <span id="email-error-message" class="error-message"></span>
 
             <span class="span-required"> Senha </span>
-            <input id="password" name="password" type="password" class="inputs required" oninput="validatePassword()">
+            <input id="password" name="password" type="password" class="required" data-error-message="Inserir senha" oninput="validateCPF()">
             <span id="password-error-message" class="error-message"></span>
 
             <span class="span-required"> Confirmar senha </span>
-            <input id="confirmpassword" name="password" type="password" class="inputs required"
-                oninput="validateConfirmPassword()">
+            <input id="confirmpassword" name="password" type="password" class="required" data-error-message="senhas incompatíveis" oninput="validateCPF()">
             <span id="confirmpassword-error-message" class="error-message"></span>
 
             <label class="checkbox-label">
