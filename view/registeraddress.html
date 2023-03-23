@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/registeraddress.css">
 
+  <script src="../js/modules/registeraddress.js" defer></script>
 
   <title>Registro</title>
 </head>
@@ -64,11 +65,10 @@
             </div>
           </div>
 
-
-
           <div class="input-wrapper" id="field-Complemento">
             <label for="complemento">Complemento</label>
-            <input type="text" id="complemento" name="complemento">            
+            <input type="text" id="complemento" name="complemento" oninput="validateComplemento()">
+            <span id="complemento-error-message" class="error-message"></span> 
           </div>
 
           <div class="input-wrapper" id="field-Bairro">
@@ -83,15 +83,13 @@
             <span id="cidade-error-message" class="error-message"></span>
           </div>
 
-          <button type="submit">Registrar</button>
+          <button id="botao-registrar" type="submit">Registrar</button>
 
         </fieldset>
       </form>
     </div>
   </main>
 
-
-  <script src="/js/modules/registeraddress.js"></script>
 </body>
 
 </html>
