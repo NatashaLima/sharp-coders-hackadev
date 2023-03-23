@@ -19,21 +19,23 @@ body {
 
 .text-container .title {
     font-family: 'Inter', sans-serif;
-    font-size: 30px;
+    font-size: 60px;
     color: #fff;
     justify-content: center;
+    font-weight: bold;
 }
 
 .text-container .imagem-onda {
     display: flex;
-    padding-top: 1%;
-    width: 300px;
+    padding-top: 1.5%;
+    width: 350px;
 }
 
 .text-container .sub-title {
     font-family: 'Inter', sans-serif;
+    font-weight: bold;
     font-size: 30px;
-    color: #fff;
+    color: #F95E1D;
     justify-content: center;
 }
 
@@ -72,11 +74,13 @@ body {
     font-weight: normal;
     text-align: center;
 }
-.conjunto-de-botoes{
+
+.conjunto-de-botoes {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .form-container .botao {
     font-size: 20px;
     font-weight: bold;
@@ -122,7 +126,7 @@ body {
         align-items: center;
         justify-content: space-around;
         height: 100vh
-        /* Altera a direção dos elementos para ficarem empilhados */
+            /* Altera a direção dos elementos para ficarem empilhados */
     }
 
     .text-container-titles {
@@ -168,7 +172,7 @@ body {
         /* remover borda do texto */
         width: 70%;
         padding: 0;
-        
+
     }
 
     .form-container .titulo-form-conteiner {
@@ -185,14 +189,14 @@ body {
         /* Diminui o tamanho da fonte do subtitulo */
     }
 
-    .conjunto-de-botoes{
-        
+    .conjunto-de-botoes {
+
         display: flex;
         flex-direction: row;
         width: 350px;
         gap: 20px;
     }
-    
+
     .form-container .botao {
         width: 250px;
         /* Reduz a largura do botão */
@@ -201,5 +205,5 @@ body {
         font-size: 18px;
         /* Diminui o tamanho da fonte do botão */
     }
-    
+
 }
