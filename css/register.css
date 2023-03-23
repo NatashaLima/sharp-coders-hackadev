@@ -106,8 +106,9 @@ h2 {
 #botao-cadastrar:hover {
     background-color: #de7c51;
     color: #EBEBEB;
+    background-color: black;
+    color: #EBEBEB;
     cursor: pointer;
-    transition: all .3s ease-in-out;
 }
 
 /*validação de dados*/
