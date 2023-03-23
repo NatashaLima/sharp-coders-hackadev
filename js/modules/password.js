@@ -14,7 +14,7 @@ function isEmailValid(email) {
 function onClickRecPassword() {
     if ( isEmailValid(email) ){
         let storage =  new StorageService();
-        storage.save(email.value, email);
+        storage.save(email.value);
     }
     else {
       alert('Digite um e-mail válido');
@@ -26,9 +26,12 @@ class StorageService {
         return JSON.parse(localStorage.getItem(email));
     }
 
-    save(email, data){
-        const toSave = JSON.stringify(email, data);
-        localStorage.setItem(email, toSave);
+    save(inputEmail){
+        const formEmail = {
+            email: inputEmail
+        };
+        const formDataJson = JSON.stringify(formEmail);
+        localStorage.setItem('formEmail',formDataJson);
     }
 
     push(email, data) {
